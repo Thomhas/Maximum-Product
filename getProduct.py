@@ -1,8 +1,8 @@
 
 def getProduct(lst):
-    first = 0
-    second = 0
-    third = 0
+    first = lst[0]
+    second = lst[1]
+    third = lst[2]
     for i in range(len(lst)):
         if lst[i] > first:
             third = second
@@ -13,7 +13,8 @@ def getProduct(lst):
             second = lst[i]
         elif lst[i] > third:
             third = lst[i]
-    return first*second*third
+    product = first * second * third
+    return product
 
 
 
