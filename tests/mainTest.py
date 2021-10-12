@@ -1,5 +1,5 @@
 import unittest
-from .getProduct import getProduct
+from sample.getProduct import getProduct
 
 class MyTestCase(unittest.TestCase):
     def test_small_lists(self):
