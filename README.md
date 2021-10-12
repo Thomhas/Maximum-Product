@@ -1,4 +1,4 @@
-# ardoq-oppgave
+# Maximum Product
 
 ## Problem:
 
