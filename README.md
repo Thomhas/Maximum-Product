@@ -6,5 +6,5 @@ Create a function that, given a list of integers, returns the highest product be
 ## Run tests
 
 ```
-python -m unittest -v tests/mainTest.py
+python -m unittest -v tests/max_product_test.py
 ```
