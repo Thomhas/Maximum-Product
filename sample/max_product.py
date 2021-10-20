@@ -27,7 +27,6 @@ def max_product(lst: List[int]):
 
         # Iterates through the list
         for i in range(3, len(lst)):
-            print(highest)
             if lst[i] < 0:
                 negative_count += 1
             # checks for lowest integers
@@ -54,7 +53,7 @@ def max_product(lst: List[int]):
             # In case all numbers on the list are negative
             return reduce(lambda acc, num: acc*num, lowest)
         else:
-            print(highest)
+
             positive_product: int = reduce(lambda acc, num: acc*num, highest)
             negative_product: int = lowest[0] * lowest[1] * highest[0]
             return max(positive_product, negative_product)
