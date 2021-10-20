@@ -1,6 +1,7 @@
 import unittest
 from sample.max_product import max_product
 
+
 class max_product_tests(unittest.TestCase):
 
     def test_len3_list(self):
@@ -21,7 +22,6 @@ class max_product_tests(unittest.TestCase):
         test4 = [52, 65, 26, 58, 84, 33, 37, 38, 85, 82]
         test5 = [59, 29, 85, 29, 41, 85, 55, 59, 31, 57]
 
-
         self.assertEqual(max_product(test1), 300)
         self.assertEqual(max_product(test2), 300)
         self.assertEqual(max_product(test3), 784148)
@@ -35,12 +35,12 @@ class max_product_tests(unittest.TestCase):
         test4 = [-1, -10, -2, -6, -5, -3]
         test5 = [-4, -5, -1, -9, -55]
 
-
         self.assertEqual(max_product(test1), 10)
-        self.assertEqual(max_product(test2), -784148)
-        self.assertEqual(max_product(test3), -10 * -6 * -5)
-        self.assertEqual(max_product(test4), -300)
-        self.assertEqual(max_product(test5), -2475)
+        self.assertEqual(max_product(test2), -35 * -15 * -53)
+        self.assertEqual(max_product(test3), -3 * -2 * -1)
+        self.assertEqual(max_product(test4), -1 * -2 * -3)
+        self.assertEqual(max_product(test5), -1 * -5 * -4)
+
 
 if __name__ == '__main__':
     unittest.main()
